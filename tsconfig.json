@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": ["build"]
+}

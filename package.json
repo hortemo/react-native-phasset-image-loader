@@ -1,0 +1,40 @@
+{
+  "name": "react-native-phasset-image-loader",
+  "version": "0.1.0",
+  "description": "React Native image loader for PHAsset images via phasset:// URL scheme",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "react-native",
+    "photos",
+    "phasset",
+    "image-loader",
+    "ios"
+  ],
+  "author": "Henrik Hortemo <henrikhortemo@icloud.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "react-native": "0.81.4",
+    "typescript": "~5.8.0"
+  },
+  "peerDependencies": {
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RNPHAssetImageLoader",
+    "type": "modules",
+    "jsSrcsDir": "./src",
+    "ios": {
+      "modulesConformingToProtocol": {
+        "RCTImageURLLoader": [
+          "PHAssetImageLoader"
+        ]
+      }
+    }
+  }
+}
